@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: jcharliedisruptingdemocicd 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jcharliedisruptingdemocicd
+  template:
+    metadata:
+      labels:
+        app: jcharliedisruptingdemocicd 
+    spec:
+      containers:
+        - name: jcharliedisruptingdemocicd 
+          image: democontainerregistry1.azurecr.io/jcharliedisruptingdemocicd
+          ports:
+          - containerPort: 80
