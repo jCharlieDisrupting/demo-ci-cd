@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <div>
+        <div>Esto es una prueba CI/CD con kubernetes y azure</div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
